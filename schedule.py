@@ -16,22 +16,22 @@ def get_defence_schedule_string(client, date):
 
 
 def get_defence_schedule(date):
-    standard_time = datetime(2021, 10, 31, 6, 00, 00)
+    standard_time = datetime(2021, 11, 11, 6, 00, 00)
     if date < standard_time:
         return None, standard_time
     table = [
-        '闇朱の獣牙兵団',
-        '紫炎の鉄機兵団',
-        '彩虹の粘塊兵団',
-        '    全兵団   ',
         '新碧の造魔兵団',
         '蒼怨の屍獄兵団',
         '銀甲の凶蟲兵団',
-        '彩虹の粘塊兵団',
         '    全兵団   ',
         '翠煙の海妖兵団',
         '灰塵の竜鱗兵団',
         '彩虹の粘塊兵団',
+        '芳墨の華烈兵団',
+        '    全兵団   ',
+        '闇朱の獣牙兵団',
+        '紫炎の鉄機兵団',
+        '芳墨の華烈兵団',
         '    全兵団   '
     ]
     interval = (date - standard_time) / timedelta(hours=1)
